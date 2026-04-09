@@ -11,9 +11,10 @@ algoritmo "Crachá de Acesso"
 
 //Variáveis
 var
-
-naluno: caractere
-turno:  caractere
+naluno:    caractere
+idade:     caractere
+curso:     caractere
+n_maquina: caractere
 
 //Nome e Turno
 inicio
@@ -25,9 +26,12 @@ inicio
     escreval (" ")
     escreva ("DIGITE O SEU NOME: ")
     leia(naluno)
-    escreva ("INFORME O SEU TURNO: ")
-    leia(turno)
-    escreval (" ")
-    escreva ("Bem-vindo, ", naluno, " do turno da ", turno, "!")
+    escreva ("QUAL A SUA IDADE: ")
+    leia(idade)
+    escreva ("QUAL O SEU CURSO: ")
+    leia(curso)
+    escreva ("QUAL O NÚMERO DA SUA MÁQUINA: ")
+    leia(n_maquina)
+    escreva ("O aluno ", naluno, " tem ", idade, " anos, faz curso de ", curso, " e está utilizando a máquina de n°", n_maquina)
 
 fimalgoritmo
