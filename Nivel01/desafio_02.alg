@@ -13,7 +13,7 @@ naluno: caractere
 idade:  inteiro
 email:  caractere
 vbolsa: real
-exprevia:caractere
+exp_previa:caractere
 
 //Informações para Registro
 inicio
@@ -34,11 +34,11 @@ leia(email)
 escreva ("Favor informar o valor da sua bolsa de auxílio: R$")
 leia(vbolsa)
 escreva ("Você tem experiência prévia? (Sim/Não): ")
-leia(exprevia)
+leia(exp_previa)
 escreval ("Seja bem-vindo ", naluno, " Segue suas informações: ")
 escreval ("Idade: ", idade)
 escreval ("E-mail: ", email)
 escreval ("Bolsa de Auxílio: R$", vbolsa)
-escreval ("Experiência Prévia? ", exp)
+escreval ("Experiência Prévia? ", exp_previa)
 
 fimalgoritmo
