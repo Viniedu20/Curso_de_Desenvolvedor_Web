@@ -13,7 +13,7 @@ naluno: caractere
 idade:  inteiro
 email:  caractere
 vbolsa: real
-exp_previa:caractere
+exp_previa: logico
 
 //Informações para Registro
 inicio
@@ -40,5 +40,6 @@ escreval ("Idade: ", idade)
 escreval ("E-mail: ", email)
 escreval ("Bolsa de Auxílio: R$", vbolsa)
 escreval ("Experiência Prévia? ", exp_previa)
+
 
 fimalgoritmo
