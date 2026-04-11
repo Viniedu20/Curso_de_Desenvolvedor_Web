@@ -36,6 +36,6 @@ abalde <- abalde - 1
 nbalde <- Nbalde + 1
 //6° Etapa
 escreval("6° Etapa: Tiramos 1L do primeiro balde e completamos o segundo, no primeiro balde temos ", abalde + " L e o segundo balde ", nbalde + " L")
-escreval("Finalmente depois de 6 Etapas conseguimos deixar o balde com 4 Litros")
+escreval("Finalmente depois de 6 Etapas conseguimos deixar o primeiro balde com 4 Litros")
 
 fimalgoritmo
