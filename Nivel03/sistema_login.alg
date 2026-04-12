@@ -6,12 +6,27 @@ algoritmo "Sistema de Login"
 // Data atual  : 11 de Abril de 2026
 var
 //variáveis
-teste: caractere
-
+user, senha: caractere
 inicio
 //desenvolvimento
-teste <- "Este é um teste."
-escreval ("Variável Teste")
-escreva ("O valor da variável TESTE é: " + teste)
-
+escreval("_______________________________________________________")
+escreval(" ")
+escreval("-------------Bem-Vindo ao Portal de Notas!-------------")
+escreval("_______________________________________________________")
+escreval("_______________________________________________________")
+escreval(" ")
+escreval("------------Favor faça o seu login abaixo:-------------")
+escreval("_______________________________________________________")
+escreval(" ")
+escreva("Usuário: ")
+leia(user)
+escreva("Senha: ")
+leia(senha)
+se (user = "admin") e (senha = "senai123") entao
+    escreval(" ")
+    escreval ("Seja Bem-vindo ", user, " !")
+    senao
+    escreval(" ")
+    escreval ("Erro: Credenciais inválidas")
+fimse
 fimalgoritmo
