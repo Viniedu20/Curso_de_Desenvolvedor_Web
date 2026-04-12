@@ -14,12 +14,12 @@ escreval ("Bem-vindo ao programa de Sensor de Temperatura do SENAI")
 escreva ("Informe a temperatura informada na sala dos servidores: ")
 leia(temp)
 se (temp <= 20) entao
-    escreval ("Status: Climatização Ideal.")
-    fimse
+    escreval ("Status: Temperatura de ",temp, "°C, Climatização Ideal.")
+    senao
     se (temp > 20) e (temp <= 25) entao
-        escreval ("Status: Normal / Atenção.")
+        escreval ("Status: Temperatura de ", temp, "°C, Normal / Atenção.")
+    senao
+        escreval ("Status: Temperatura de ", temp, "°C, PERIGO! Servidor superaquecendo!")
     fimse
-    se (temp > 25) entao
-        escreval ("Status: PERIGO! Servidor superaquecendo!")
-    fimse
+fimse
 fimalgoritmo
