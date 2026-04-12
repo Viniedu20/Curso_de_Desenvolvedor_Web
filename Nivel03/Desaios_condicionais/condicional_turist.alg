@@ -6,7 +6,7 @@ algoritmo "Viagem de Turistas"
 // Data atual  : 12 de Abril de 2026
 var
 //variáveis
-estado1, estado2, estado3, estado4, mes1, mes2, mes3, mes4: caractere
+estado1, estado2, estado3, estado4, mes1, mes2, mes3, mes4: inteiro
 
 inicio
 //desenvolvimento
@@ -23,24 +23,37 @@ escreval ("4. O alemão foi para o Amazonas em junho ou dezembro.")
 escreval (" ")
 escreval ("5. O italiano viajou no mês em que é comemorado o natal.")
 escreval (" ")
+escreval ("Informações: ")
+escreval (" 1-) Rio de Janeiro")
+escreval (" 2-) Bahia")
+escreval (" 3-) Amazonas")
+escreval (" 4-) Rio grande do Sul")
+escreval (" 5-) Dezembro")
+escreval (" 6-) Junho")
+escreval (" 7-) Março")
+escreval (" 8-) Setembro")
+escreval (" ")
 escreval ("Informe a sua Resposta abaixo: ")
-escreva ("O espanhol foi para qual Estado? ")
+escreva ("O espanhol viajou para onde: ")
 leia(estado1)
-escreva ("O espanhol viajou em qual mês? ")
+escreva ("Viajou em qual mês: ")
 leia(mes1)
-escreva ("O português foi para qual Estado? ")
+escreval (" ")
+escreva ("O português viajou para onde: ")
 leia(estado2)
-escreva ("O português viajou em qual mês? ")
+escreva ("Viajou em qual mês: ")
 leia(mes2)
-escreva ("O italiano foi para qual Estado? ")
+escreval (" ")
+escreva ("O italiano viajou para onde: ")
 leia(estado3)
-escreva ("O italiano viajou em qual mês? ")
+escreva ("Viajou em qual mês: ")
 leia(mes3)
-escreva ("O alemão foi para qual Estado? ")
+escreval (" ")
+escreva ("O alemão viajou para onde: ")
 leia(estado4)
-escreva ("O alemão viajou em qual mês? ")
+escreva ("Viajou em qual mês: ")
 leia(mes4)
-se (estado1 = "Rio Grande do Sul")e(mes1 = "Março")e(estado2 = "Bahia")e(mes2 = "Setembro")e(estado3 = "Rio de Janeiro")e(mes3 = "Dezembro")e(estado4 = "Amazonas")e(mes4 = "Junho") entao
+se (estado1=4)e(mes1=7)e(estado2=2)e(mes2=8)e(estado3=1)e(mes3=5)e(estado4=3)e(mes4=6) entao
       escreval (" ")
       escreval("Parabéns! Acertou todas as questões!")
       senao
