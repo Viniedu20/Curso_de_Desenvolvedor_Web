@@ -22,7 +22,7 @@ leia(comp)
 soma <- largura + largura + comp + comp
 produto <- largura * comp
 escreval("Com bases nas medidas temos: ")
-escreval("Área da Sala: ", produto)
-escreval("Perímetro da Sala: ", soma)
+escreval("Área da Sala: ", produto, "m²")
+escreval("Perímetro da Sala: ", soma, "m")
 
 fimalgoritmo
