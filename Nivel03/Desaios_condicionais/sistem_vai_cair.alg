@@ -5,11 +5,9 @@ algoritmo "Desafio Condicional"
 // Autor(a)    : Vinicius Eduardo
 // Data atual  : 12 de Abril de 2026
 var
-
 temp, temp2, temp3, temp4, temp5: inteiro
 
 inicio
-
 escreval("Quatro técnicos de TI estão no corredor escuro de um Data Center e precisam chegar à sala de servidores principal antes que o sistema caia, em no máximo 17 minutos.")
 escreval("Eles têm apenas uma lanterna. O corredor é estreito, então no máximo duas pessoas podem passar juntas por vez, sempre caminhando na velocidade do mais lento.")
 escreval("Alguém sempre precisa voltar com a lanterna para buscar os outros.")
@@ -35,22 +33,25 @@ escreval("9-) Carlos retorna")
 escreval("10-) Diana retorna")
 escreval(" ")
 escreva("Informe a Primeira opção que se deve seguir: ")
-leia(temp) 
-se(temp = 1) ou (temp = 8) entao 
+leia(temp)
+repita
+se(temp>=7)entao
+escreval("Alternativa inválida! Informe a Primeira Opção:")
+leia(temp)
+senao
+fimse
+ate(temp<7)
+se(temp = 1) entao 
     temp <- 2
     senao
-    se(temp = 2) ou (temp = 4) ou (temp = 9) entao 
+    se(temp = 2) ou (temp = 4) entao 
     temp <- 5
         senao
-        se (temp = 3) ou (temp = 5) ou (temp = 6) ou (temp = 10) entao
+        se (temp = 3) ou (temp = 5) ou (temp = 6) entao
         temp <- 10
-            senao
-            se(temp = 7) entao 
-            temp <- 1
             fimse
         fimse
     fimse
-fimse
 escreval("Opção Escolhida! Se foram ", temp, "min")
 escreva("Informe a Segunda opção que se deve seguir: ")
 leia(temp2)
@@ -69,13 +70,16 @@ se(temp2 = 1) ou (temp2 = 8) entao
         fimse
     fimse
 fimse
+  se(temp2<=17) entao
 escreval("Opção Escolhida! Se foram ", temp2, "min")
-se (temp2 > 17) entao
+  senao
     escreval(" ")
-    escreval("Tempo Esgotado! Tente Novamente!")   
-fimse
-escreva("Informe a Terceira opção que se deve seguir: ")
-leia(temp3)
+    escreval("Segunda Opção Escolhida! ", temp2, "min - Tempo Esgotado! Tente Novamente!")   
+  fimse
+  se(temp2<=17)entao
+  escreva("Informe a Terceira opção que se deve seguir: ")
+  leia(temp3)
+  fimse
 se(temp3 = 1) ou (temp3 = 8) entao 
     temp3 <- temp2 + 2
     senao
@@ -91,13 +95,18 @@ se(temp3 = 1) ou (temp3 = 8) entao
         fimse
     fimse
 fimse
+se(temp2<=17 e temp3<=17) entao
 escreval("Opção Escolhida! Se foram ", temp3, "min")
-se (temp3 > 17) entao
+  senao
+  se(temp3>17)entao
     escreval(" ")
-    escreval("Tempo Esgotado! Tente Novamente!")
+    escreval("Terceira Opção Escolhida! ", temp3, "min - Tempo Esgotado! Tente Novamente!")   
+  fimse
 fimse
+se(temp2<=17 e temp3<=17) entao
 escreva("Informe a Quarta opção que se deve seguir: ")
 leia(temp4)
+fimse
 se(temp4 = 1) ou (temp4 = 8) entao 
     temp4 <- temp3 + 2
     senao
@@ -113,13 +122,17 @@ se(temp4 = 1) ou (temp4 = 8) entao
         fimse
     fimse
 fimse
+se(temp3<=17 e temp4<=17) entao
 escreval("Opção Escolhida! Se foram ", temp4, "min")
+fimse
 se (temp4 > 17) entao
     escreval(" ")
-    escreval("Tempo Esgotado! Tente Novamente!")
+    escreval("Quarta Opção Escolhida! ", temp4, "min - Tempo Esgotado! Tente Novamente!") 
 fimse
+se(temp2<=17 e temp3<=17 e temp4<=17) entao
 escreva("Informe a Quinta opção que se deve seguir: ")
 leia(temp5)
+fimse
 se(temp5 = 1) ou (temp5 = 8) entao 
     temp5 <- temp4 + 2
     senao
@@ -135,13 +148,15 @@ se(temp5 = 1) ou (temp5 = 8) entao
         fimse
     fimse
 fimse
+se(temp2<=17 e temp3<=17 e temp4<=17 e temp5<=17) entao
 escreval("Opção Escolhida! Se foram ", temp5, "min")
+fimse
 se (temp5 = 17) entao
     escreval(" ")
     escreval("Parabéns! Todos os 04 Técnicos chegaram na Sala dentro do Tempo!")
 fimse
 se (temp5 > 17) entao
     escreval(" ")
-    escreval("Tempo Esgotado! Tente Novamente!")
+    escreval("Quinta Opção Escolhida! ", temp5, "min - Tempo Esgotado! Tente Novamente!") 
 fimse
 fimalgoritmo
