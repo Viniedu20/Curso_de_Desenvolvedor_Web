@@ -8,6 +8,6 @@ inicio
 escreva ("Escreva o seu nome: ")
 leia(nome)
 escreval(" ")
-escreval ("Boas-vindas ", nome, "!")
+escreval ("Olá ", nome," é um prazer te conhecer!")
 
 fimalgoritmo
