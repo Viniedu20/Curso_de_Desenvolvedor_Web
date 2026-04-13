@@ -1,13 +1,15 @@
-algoritmo ""
+algoritmo "Nome e Salário"
 
 var
-
-teste: caractere
+nome: caractere
+salario: real
 
 inicio
 
-teste <- "Este é um teste."
-escreval ("Variável Teste")
-escreva ("O valor da variável TESTE é: " + teste)
+escreva ("Nome do Funcionário: ")
+leia(nome)
+escreva ("Salário: R$")
+leia(salario)
+escreval ("Funcionário(a): ", nome, " tem um salário de: R$", salario:0:2)
 
 fimalgoritmo
