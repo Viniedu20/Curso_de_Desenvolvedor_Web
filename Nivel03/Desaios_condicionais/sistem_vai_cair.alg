@@ -6,7 +6,7 @@ algoritmo "Desafio Condicional"
 // Data atual  : 12 de Abril de 2026
 var
 
-teste: caractere
+temp: inteiro
 
 inicio
 
@@ -21,5 +21,37 @@ escreval("Carlos (C): 5 minutos")
 escreval("Diana (D): 10 minutos")
 escreval(" ")
 escreval("Como eles devem organizar as travessias para que todos cheguem à sala em exatamente 17 minutos?")
-
+escreval(" ")
+escreval("Informações: ")
+escreval("1-) Alice e Bruno vão juntos")
+escreval("2-) Alice e Carlos vão juntos") 
+escreval("3-) Alice e Diana vão juntos") 
+escreval("4-) Bruno e Carlos vão juntos") 
+escreval("5-) Bruno e Diana vão juntos") 
+escreval("6-) Carlos e Diana vão juntos") 
+escreval("7-) Alice retorna") 
+escreval("8-) Bruno retorna")  
+escreval("9-) Carlos retorna")  
+escreval("10-) Diana retorna")
+escreval(" ")
+escreval("Informe a Primeira opção que se deve seguir: ")
+leia(temp) 
+se(temp = 1) ou (temp = 8) entao 
+    temp <- 2
+    senao
+    se(temp = 2) ou (temp = 4) ou (temp = 9) entao 
+    temp <- 5
+        senao
+        se (temp = 3) ou (temp = 5) ou (temp = 6) ou (temp = 10) entao
+        temp <- 10
+            senao
+            se(temp = 7) entao 
+            temp <- 1
+            fimse
+        fimse
+    fimse
+fimse
+se (temp > 17)
+    escreval("Tempo Esgotado! Tente Novamente!")
+fimse
 fimalgoritmo
