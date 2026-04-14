@@ -1,7 +1,7 @@
 algoritmo "Direito ao Voto"
 
 var
-  dia, mes, ano, idade: inteiro
+  ano, idade: inteiro
 
 inicio
 
