@@ -7,7 +7,10 @@ algoritmo "Sistema de Login"
 var
 //variáveis
 user, senha: caractere
+tentativa1, tentativa2: inteiro
 inicio
+tentativa1 <- 0
+tentativa2 <- 0
 //desenvolvimento
 escreval("_______________________________________________________")
 escreval(" ")
@@ -17,16 +20,29 @@ escreval("_______________________________________________________")
 escreval(" ")
 escreval("------------Favor faça o seu login abaixo:-------------")
 escreval("_______________________________________________________")
-escreval(" ")
-escreva("Usuário: ")
-leia(user)
-escreva("Senha: ")
-leia(senha)
-se (user = "admin") e (senha = "senai123") entao
-    escreval(" ")
-    escreval ("Seja Bem-vindo ", user, " !")
+repita
+    escreva("Usuário: ")
+    leia(user)
+    escreva("Senha: ")
+    leia(senha)
+
+    tentativa1 <- tentativa1 + 1
+    tentativa2 <- tentativa2 + 1
+
+    se (user <> "admin") ou (senha <> "senai123") e (tentativa2 <= 3) entao  
+        escreval("Usuário ou Senha Incorreta... Tente novamente")
     senao
+        escreval("Login realizado com sucesso")
+        interrompa
+    fimse
+ate (tentativa2 >= 3)
+
+se (tentativa2 >= 3) entao
     escreval(" ")
-    escreval ("Erro: Credenciais inválidas")
+    escreval("Acesso Negado!")
+senao
+
 fimse
+    
 fimalgoritmo
+
