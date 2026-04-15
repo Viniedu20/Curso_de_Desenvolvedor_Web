@@ -16,6 +16,7 @@ se (distancia <= 200) entao
 senao
 
     valor <- distancia * 0.45
+    
     escreval ("O preço da passagem é de: R$", valor:0:2)
 fimse
 
