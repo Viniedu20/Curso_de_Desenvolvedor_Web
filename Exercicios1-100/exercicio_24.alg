@@ -2,21 +2,31 @@ algoritmo "Preço da Passagem"
 
 var
 
-distancia: inteiro
-valor: real
+seg1, seg2, seg3, valor1, valor2, valor3: real
 
 inicio
 
-escreva("Informe a distância da viagem que deseja percorrer em Km: ")
-leia(distancia)
-se (distancia <= 200) entao
-    valor <- distancia * 0.5
+escreva("Informe o tamanho do 1 segmento: ")
+leia(seg1)
+escreva("Informe o tamanho de 2 segmento: ")
+leia(seg2)
+escreva("Informe o tamanho de 3 segmento: ")
+leia(seg3)
+valor1 <- seg1 + seg2
+valor2 <- seg2 + seg3
+valor3 <- seg1 + seg3
+se (seg1 < valor2) entao
+        se (seg2 < valor3) entao 
+            se (seg3 < valor1) entao
+            escreval(" ") 
+            escreva("É possível fazer um TRIÂNGULO!")  
+            fimse
+        fimse
+fimse
+
+se (seg1 >= valor2) ou (seg2 >= valor3) ou (seg3 >= valor1) entao 
     escreval(" ")
-    escreval ("O valor do preço da passagem é de: ", valor)
-senao
-    valor <- distancia * 0.45
-    escreval(" ")
-    escreval ("O valor do preço da passagem é de: ", valor)
+    escreval("Não é possível fazer um TRIÂNGULO..")
 fimse
 
 fimalgoritmo
