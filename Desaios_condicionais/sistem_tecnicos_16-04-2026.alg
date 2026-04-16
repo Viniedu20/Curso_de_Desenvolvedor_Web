@@ -2,7 +2,6 @@ algoritmo "Sistema vai cair!"
 
 var
 temp, temp2, temp3, temp4, temp5: inteiro
-limite: inteiro
 
 inicio
 escreval("Quatro técnicos de TI estão no corredor escuro de um Data Center e precisam chegar à sala de servidores principal antes que o sistema caia, em no máximo 17 minutos.")
