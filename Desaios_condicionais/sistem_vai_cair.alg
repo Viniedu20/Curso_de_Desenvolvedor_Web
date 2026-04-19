@@ -36,7 +36,7 @@ escreva("Informe a Primeira opção que se deve seguir: ")
 leia(temp)
 repita
 se(temp>=7)entao
-escreval("Alternativa inválida! Informe a Primeira Opção:")
+escreva("Alternativa inválida! Informe a Primeira Opção:")
 leia(temp)
 senao
 fimse
