@@ -1,0 +1,27 @@
+algoritmo
+
+var
+//variáveis
+valor, n100, n50, n20, n10, n5, n1, resto: inteiro
+
+inicio
+//desenvolvimento
+escreval("Sistema de Caixa Eletrônico!")
+escreva("Digite um valor inteiro para o saque: R$")
+leia(valor)
+n100 <- valor \ 100
+resto <- valor mod 100
+n50 <- resto \ 50
+resto <- resto mod 50
+n20 <- resto \ 20
+resto <- resto mod 20
+n10 <- resto \ 10
+resto <- resto mod 10
+n5 <- resto \ 5
+resto <- resto mod 5
+n1 <- resto \ 1
+resto <- resto mod 1
+escreval("Será retirado no saque: ")
+escreval(n100, " nota(s) de R$100,00, ", n50, " nota(s) de R$50,00, ", n20, " nota(s) de R$20,00, ", n10, " nota(s) de R$10,00, ", n5, " nota(s) de R$5,00 e ", n1, " nota(s) de R$1,00, ")
+
+fimalgoritmo
