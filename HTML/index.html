@@ -75,7 +75,7 @@
                                  <!--O nome descrito na Tag name não é visível para o usuário sendo então necessário acrescentar uma linha <label> -->
 
                                 <input type="radio" value= "Pyton" id="q1a" name="Pergunta1">
-                                <label for="q1a"><b>Pyton</b></label><br>
+                                <label for="q1a"><b>Python</b></label><br>
 
                                 <input type="radio" value= "JavaScript" id="q1b" name="Pergunta1">
                                 <label for="q1b"><b>JavaScript</b></label><br>
@@ -145,7 +145,7 @@
                     <form>
                         <b>Resposta:</b><br>
                         <input type="checkbox" id="q5a" value="Pyton" name="Pergunta5">
-                        <label for="q5a"><b>Pyton</b></label><br>
+                        <label for="q5a"><b>Python</b></label><br>
 
                         <input type="checkbox" id="q5b" value="HTML" name="Pergunta5">
                         <label for="q5b"><b>HTML</b></label><br>
@@ -155,6 +155,9 @@
 
                         <input type="checkbox" id="q5d" value="CSS" name="Pergunta5">
                         <label for="q5d"><b>CSS</b></label><br>
+
+                        <input type="checkbox" id="q5e" value="JAVA" name="Pergunta5">
+                        <label for="q5d"><b>JAVA</b></label><br>
 
                     </form>       
                  </section><br>
@@ -183,10 +186,11 @@
 
                     <form>
                         <select id="p7" name="Pergunta7">
-                            <option value="id">ID</option>
-                            <option value="class">CLASS</option>
-                            <option value="name">NAME</option>
-                            <option value="placeholder">PLACEHOLDER<option>
+                            <option value="ID">ID</option>
+                            <option value="Class">CLASS</option>
+                            <option value="Name">NAME</option>
+                            <option value="Placeholder">PLACEHOLDER</option>
+                            <option value="Type">TYPE</option>
 
                         </select>
                     </form>       
@@ -223,6 +227,83 @@
                  </section><br>
                  <hr><hr>
                  
+                 <section>
+
+                    <!--Tabela de Pontuação -->
+                    <h2>
+                        <u>Tabela de Pontuação</u>
+                    </h2>
+                    <!--Monta uma estrutura de uma Tabela-->
+                    <tbody>
+                        <table border="2">
+                            <thead>
+                                <tr>
+                                    <th>Pontuação</th><th>Descrição</th>
+                                </tr>    
+                            </thead>
+                            <!--A tag <tr> mesmo significando table row. Pode causar alguma dúvida em referência "Tradução Row (Coluna), mas será habilitada a edição da linha da coluna-->
+                             <tr>
+                                <th>0 - 2</th><th>Não foi bem! Tente novamente!</th>
+                            </tr>
+                            <tr>
+                                <th>3 - 4</th><th>Precisa melhorar muito ainda!</th>
+                            </tr>
+                            <tr>
+                                <th>5 - 6</th><th>Regular mas não é o suficiente!</th>
+                            </tr>
+                            <tr>
+                                <th>7 - 8</th><th>Muito bom! Você está aprendendo!</th>
+                            </tr>
+                             <tr>
+                                <th>9 - 10</th><th>Parabéns Programador!!</th>
+                             </tr>
+                             <tfoot>
+                                <tr>
+                                    <th colspan="2">Boa Sorte na Próxima!</th>
+
+                                    </td>
+                                </tr>
+
+                             </tfoot>
+                            </table>
+                     </tbody> <br><hr><hr>
+            </section>
+            <section>
+                <!--Lista de Respostas-->
+                <u><h2>Verifique suas Respostas</h2></u>
+
+                <!--Como nata bela, para trabalharmos com listas, primeiramente precisamos informar a intenção através da tag <ul>
+                    <ul> -- Habilita a Lista
+                    <ol> -- Lista numerada 
+                    <li> -- Lista de pontos --> 
+                        <ul>
+                        <details>
+                            <summary>Clique para visualizar as respostas</summary><br>
+                        <li>1 - HTML</li>
+                        <li>2 - Domínio</li>
+                        <li>3 - Abner@#456adm_</li>
+                        <li>4 - 1991</li>
+                        <li>5 - Python, JavaScript e JAVA</li>
+                        <li>6 - *.html</li>
+                        <li>7 - ID</li>
+                        <li>8 - JAVA</li>
+                         </details> 
+                    </ul>
+
+            </section><hr><hr><br><br>
+            <section>
+                         <!--Formulário de Feedback-->
+                         <form>
+
+                            <fieldset>
+
+                                <legend>Informações de contato:</legend><br>
+                                <label for="name">Informe o seu nome:</label> 
+                                <input type="text" id="name" name="name"><br><br>
+                                <label for="Email">Informe o seu email:</label> 
+                                <input type="text" id="email"><br><br>
+                                <textarea name="comentariocmt" id="cmt" rows="4" cols="50" placeholder="Digite seus comentários aqui..."></textarea>
+            </section>
                 </main>
             <!--Rodapé da Página-->
             <footer>
