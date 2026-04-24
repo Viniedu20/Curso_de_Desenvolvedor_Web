@@ -1,0 +1,67 @@
+ 
+/*Import de Fonte*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Sekuya&display=swap');
+
+ /* Seletor de todo o conteúdo da página */
+ * {
+    margin:0; /*Espaçamento nas margens*
+    rem -- medida relativa a tela em que for apresentado o app
+    px  -- medida relativa a Pixel*/
+    padding: 0; /*Espaçamento interno */
+    box-sizing: border-box;
+ }
+
+ hr {display: none; } /* Desabilita as Tags HR */
+
+body {
+    margin: 0.5rem;
+    line-height: 20px;
+    background-color: hsl(145, 68%, 85%);
+    color: rgb(0, 0, 0);
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+header {
+    text-align: center;
+    padding: 4rem;
+    border: #000000;
+    border-width: 0.5rem;
+    border-radius: 150px;
+    border-style: double;
+}
+h1 { 
+    font-size: 2.5rem;
+}
+main {
+    padding: 5rem;
+    color: rgb(9, 44, 23);
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+p.introdução {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #ff0303;
+    padding: 1.5rem;
+}
+figure {
+    text-align: center;
+}
+label {
+color: rgb(0, 0, 0);
+}
+
+h2.pontuacao {
+    color: rgb(24, 27, 228);
+}
