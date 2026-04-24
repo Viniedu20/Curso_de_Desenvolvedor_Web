@@ -6,6 +6,7 @@
 
     <!--A tag <Head> guarda as configurações invisíveis (metadados, Título da Página, Autor, etc..)-->
         <head>
+            <link rel="shortchut message icon" href="assets/comunicacoes.png">
             <!--Título que aparecerá na Aba-->
             <title> QUIZ PARA PROGRAMADORES </title>
         
@@ -22,7 +23,13 @@
 
         <meta name="keywords" content="aula, web">
 
+        <!-- Cria o link para a pasta de estilos CSS para dar cor e fonte ao site-->
+
+         <link rel="stylesheet" href="./css/style.css">
+
+
         <!--Fechamento da tag </head> Obrigatório-->
+
         </head>
 
         <!--A tag <body> é o corpo da página. Tudo que será acrescentado será visível para o usuário-->
@@ -31,11 +38,11 @@
             <header>
                 <hr><hr>
                 <!--Como boas práticas no desenvolvimento de sites recomenda-se 01 <h1> por aba-->
-                <h1>TESTE PARA PROGRAMADORES</h1>
+                <h1>TESTE PARA PROGRAMADORES</h1><br>
                 <!--Parágrafo -->
-                <p>
-                    <b>Teste seus conhecimentos em programação e veja se está preparado!</b>
-                </p>
+                <h2>
+                    <b>Teste seus conhecimentos em programação e veja se está preparado!</b><br><br>
+                </h2>
             </header>
             <hr><hr>
             <!--Conteúdo Principal da Página-->
@@ -43,12 +50,12 @@
                 <!--Delimita de forma organizada partes específicas do site-->
                 <section>
                     <h2>
-                        <u>Sobre este Teste:</u>
+                        <br><u>Sobre este Teste:</u>
                         
-                        </h2>
-                        <p>
+                        </h2><br>
+                        <p class="introdução">
                             Esse teste foi desenvolvido para treinar seus conhecimentos em <strong>Programação</strong> como: <br> - Linguagem em programação; <br> - Lógica de programação; <br> - Conceitos Básicos; <br> - Entre Outros. <br><br> Você encontrará diferentes tipos de perguntas como:<br> - Múltipla Escolha Textos; <br> -  Datas; <br> - Imagens. <br> <br> Você também poderá encontrar alguns acrônimos como <abbr title="HyperText Markup Language (Linguagem de Marcação Hipertexto)"><i>HTML</i></abbr> e <abbr title="Cascading Style Sheets (Folhas de Estilo em Cascata)"><i>CSS</i></abbr>, <br> que são comumente usados em questões relacionadas em <em>Desenvolvimento Web.</em> <br><br><b><i>Boa Sorte!!</b></i>
-                        </p>
+                        </p><br>
                         <hr><hr>
 
                     <!--Propriedades de Parágrafos (textos)
@@ -68,9 +75,10 @@
                 <section>
                     <!--INÍCIO DO QUIZ
                         Questão 01-->
-                        <h2>Questão 01: Qual linguagem é usada para estruturar páginas na WEB? </h2>
+                        <h2>Questão 01: Qual linguagem é usada para estruturar páginas na WEB? </h2><br>
                         <!--A Tag <form> é a base de qualquer sistema interativo na Web. Ela é o "Envelope" que agrupa os campos de entrada (inputs) e define para onde e como os dados preenchidos pelo usuário serão enviados no servidor-->
                             <form>
+                                <b>Resposta:</b><br>
                                 <!-- Esta linha <input> representa o link com a lógica a ser implementada no BackEnd-->
                                  <!--O nome descrito na Tag name não é visível para o usuário sendo então necessário acrescentar uma linha <label> -->
 
@@ -94,7 +102,7 @@
                     <!--Questão 02 - Resposta -->
                     <h2>
                         Questão 02: Na URL HTTPS://www.google.com.br, o trecho "google.com" é conhecido como:
-                    </h2>
+                    </h2><br>
                     
                     <form>
             
@@ -110,7 +118,7 @@
                     <!--Questão 03 - Senha -->
                     <h2>
                         Questão 03: Escreva um exemplo de senha segura:
-                    </h2>
+                    </h2><br>
                     <form>
 
                         <b>Resposta:</b> 
@@ -126,7 +134,7 @@
                     <h2>
                         Questão 04: Em que ano o HTML foi lançado:
 
-                    </h2>
+                    </h2><br>
                     <form>
                         <b>Resposta:</b> 
                         <input type="date" id="q4" name="Pergunta4">
@@ -141,7 +149,7 @@
                     <!--Questão 05 - Seleção Múltipla -->
                     <h2>
                         Questão 05: Qual dessas tecnologias são consideradas Linguagem de Programação?
-                    </h2>
+                    </h2><br>
                     <form>
                         <b>Resposta:</b><br>
                         <input type="checkbox" id="q5a" value="Pyton" name="Pergunta5">
@@ -168,7 +176,7 @@
                     <!--Questão 06 - Upload -->
                     <h2>
                         Questão 06: Faça o Upload de um arquivo que contenha um código HTML:
-                    </h2>
+                    </h2><br>
                     <form>
                         <input type="file" id="q6" name="Pergunta6">
                         <label for="q6"></label><br>
@@ -182,7 +190,7 @@
                     <!--Questão 07 - Menu Suspenso -->
                     <h2>
                         Questão 07: Selecione o ATRIBUTO do "Input" que define o seu tipo:
-                    </h2>
+                    </h2><br>
 
                     <form>
                         <select id="p7" name="Pergunta7">
@@ -231,8 +239,8 @@
 
                     <!--Tabela de Pontuação -->
                     <h2>
-                        <u>Tabela de Pontuação</u>
-                    </h2>
+                        Tabela de Pontuação
+                    </h2><br>
                     <!--Monta uma estrutura de uma Tabela-->
                     <tbody>
                         <table border="2">
@@ -270,7 +278,7 @@
             </section>
             <section>
                 <!--Lista de Respostas-->
-                <u><h2>Verifique suas Respostas</h2></u>
+                <u><h2>Verifique suas Respostas</h2></u><br>
 
                 <!--Como nata bela, para trabalharmos com listas, primeiramente precisamos informar a intenção através da tag <ul>
                     <ul> -- Habilita a Lista
@@ -307,8 +315,8 @@
                 </main>
             <!--Rodapé da Página-->
             <footer>
-            <p>Teste de Programadores. Todos os direitos reservados</p>
-            <p>Para acessar mais testes <a href="pages/page1.html" target="_top">Clique aqui</a></p>
+            <br><p>Teste de Programadores. Todos os direitos foram reservados</p>
+            <p>Para acessar mais testes: <a href="pages/page1.html" target="_top">Clique aqui</a></p>
 
             </footer>
         </body>
